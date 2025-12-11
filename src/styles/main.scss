@@ -47,7 +47,7 @@ justify-content: space-between;
   color: #FFF;
 }
 
-.header__img {
+.header__logo {
   display: block;
   max-width: 152px;
   height: auto;
@@ -70,5 +70,43 @@ width: 24px;
   background-image: url(../../images/icons/icon-burger-menu.png);
 }
 
+.icon--close {
+background-image: url(../../images/icons/icon-close.png);
+}
+
 /* #endregion */
 
+/* #region menu */
+.menu {
+  box-sizing: border-box;
+  padding: 24px 20px 40px;
+  height: 100vh;
+  background-color: #F9F9F9;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu:target {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.menu__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__logo {
+  display: block;
+  max-width: 152px;
+  height: auto;
+}
+
+/* #endregion */
