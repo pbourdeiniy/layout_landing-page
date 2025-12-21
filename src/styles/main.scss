@@ -4,6 +4,8 @@
   font-size: 16px;
   line-height: 140%;
   color: #1B2129;
+
+  scroll-behavior: smooth;
 }
 
 .page__body {
@@ -11,7 +13,7 @@
 }
 
 .page__menu {
- position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -97,6 +99,7 @@ background-image: url(../../images/icons/icon-close.png);
   padding: 24px 20px 40px;
   height: 100vh;
   background-color: #F9F9F9;
+  font-weight: 700;
 }
 
 .menu__content {
@@ -107,6 +110,7 @@ background-image: url(../../images/icons/icon-close.png);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 32px;
 }
 
 .menu__logo {
@@ -115,32 +119,60 @@ background-image: url(../../images/icons/icon-close.png);
   height: auto;
 }
 
+.menu__nav {
+  margin-bottom: 48px;
+}
+
+.menu__phone-number {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.menu__call-to-order {
+  display: block;
+  width: fit-content;
+
+  padding-bottom: 3px;
+  border-bottom: 1px solid #1B2129;
+
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+/* #endregion */
+
+/* #region nav */
+.nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+// .nav__item {
+//   display: flex;
+//   align-items: center;
+// }
+
+.nav__link {
+  display: block;
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 22px;
+  color: inherit;
+  letter-spacing: 0;
+}
+
 /* #endregion */
 
 
-/*
-A mix is a BEM technique that allows one element to
- have multiple responsibilities by combining a block
-and an element on the same HTML node.
-In our case:
-The menu block is responsible for internal styling
-and behavior (structure, inner layout, appearance).
-The page__menu element is responsible for external
-layout and positioning within the page block.
-So:
-menu → what it is
-page__menu → where it lives
-
-When for block (in our case its menu) we should
-set position: relative, then we can dont mix this
-block with element (in our case its page__menu).
-Instead we can just add elements of parent blocks
-as wrap.
-
-Therefore, using mixes for blocks is the preferred
-approach.If position: relative is required, adding
-a wrapperelement inside the block helps prevent
-layout issues related to mixing responsibilities
-
-  */
 
