@@ -1,13 +1,28 @@
 /* #region page */
-html {
+.page {
   font-family: Manrope, sans-serif;
   font-size: 16px;
   line-height: 140%;
   color: #1B2129;
 }
 
-body {
+.page__body {
   margin: 0;
+}
+
+.page__menu {
+ position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  opacity: 0;
+  pointer-events: none;
+}
+
+.page__menu:target {
+  opacity: 1;
+  pointer-events: all;
 }
 
 /* #endregion */
@@ -82,19 +97,10 @@ background-image: url(../../images/icons/icon-close.png);
   padding: 24px 20px 40px;
   height: 100vh;
   background-color: #F9F9F9;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-
-  opacity: 0;
-  pointer-events: none;
 }
 
-.menu:target {
-  opacity: 1;
-  pointer-events: all;
+.menu__content {
+  position: relative;
 }
 
 .menu__top {
@@ -110,3 +116,31 @@ background-image: url(../../images/icons/icon-close.png);
 }
 
 /* #endregion */
+
+
+/*
+A mix is a BEM technique that allows one element to
+ have multiple responsibilities by combining a block
+and an element on the same HTML node.
+In our case:
+The menu block is responsible for internal styling
+and behavior (structure, inner layout, appearance).
+The page__menu element is responsible for external
+layout and positioning within the page block.
+So:
+menu → what it is
+page__menu → where it lives
+
+When for block (in our case its menu) we should
+set position: relative, then we can dont mix this
+block with element (in our case its page__menu).
+Instead we can just add elements of parent blocks
+as wrap.
+
+Therefore, using mixes for blocks is the preferred
+approach.If position: relative is required, adding
+a wrapperelement inside the block helps prevent
+layout issues related to mixing responsibilities
+
+  */
+
