@@ -1,7 +1,8 @@
-@import 'blocks/page.css';
-@import 'blocks/header.css';
-@import 'blocks/icon.css';
-@import 'blocks/top-bar.css';
-@import 'blocks/menu.css';
-@import 'blocks/nav.css';
+@import './utilities/mixins';
+@import 'blocks/page';
+@import 'blocks/header';
+@import 'blocks/icon';
+@import 'blocks/top-bar';
+@import 'blocks/menu';
+@import 'blocks/nav';
 
