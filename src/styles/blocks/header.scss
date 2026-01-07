@@ -21,6 +21,9 @@ justify-content: space-between;
 
 &__bottom {
   padding-block: 0 40px;
+  @include on-tablet {
+    padding-block: 0 64px;
+  }
 
   @include content-padding-inline;
 }
