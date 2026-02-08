@@ -1,11 +1,12 @@
 .header {
+display: none !important;
 box-sizing: border-box;
 height: 100vh;
 background-image: url(../../images/header-bg.png);
 background-size: cover;
 background-position: center;
 
-display: flex;
+// display: flex;
 flex-direction: column;
 justify-content: space-between;
 
