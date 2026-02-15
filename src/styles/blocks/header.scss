@@ -1,14 +1,18 @@
 .header {
-display: none !important;
 box-sizing: border-box;
 height: 100vh;
 background-image: url(../../images/header-bg.png);
 background-size: cover;
 background-position: center;
 
-// display: flex;
-flex-direction: column;
-justify-content: space-between;
+
+
+&__content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 &__title {
   margin: 0;
@@ -30,7 +34,6 @@ justify-content: space-between;
     padding-bottom: 64px;
   }
 
-  @include content-padding-inline;
 }
 }
 
