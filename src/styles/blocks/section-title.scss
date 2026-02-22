@@ -6,7 +6,9 @@
   line-height: 100%;
   letter-spacing: 0;
 
-  
+  &--margin--smaller {
+    margin-bottom: 24px;
+  }
 
 @include on-tablet {
   font-size: 40px;
