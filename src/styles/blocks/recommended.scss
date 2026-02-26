@@ -1,6 +1,7 @@
 .recommended {
   &__products {
     row-gap: 40px;
+    
     @include page-grid;
 
   // @include on-tablet {
@@ -22,4 +23,4 @@
      }
     }
   }
-// }
+
