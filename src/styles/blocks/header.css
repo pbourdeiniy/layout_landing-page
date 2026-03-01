@@ -1,13 +1,13 @@
 header {
-box-sizing: border-box;
-height: 100vh;
-background-image: url(../../images/header-bg-mobile.png);
-background-size: cover;
-background-position: center;
+  box-sizing: border-box;
+  height: 100vh;
+  background-image: url(../../images/header-bg-mobile.png);
+  background-size: cover;
+  background-position: center;
 
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header__title {
@@ -17,7 +17,7 @@ justify-content: space-between;
   font-size: 36px;
   line-height: 100%;
   letter-spacing: 0;
-  color: #FFF;
+  color: #fff;
 }
 
 .header__bottom {

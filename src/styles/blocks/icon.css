@@ -1,7 +1,7 @@
 .icon {
-display: block;
-height: 24px;
-width: 24px;
+  display: block;
+  height: 24px;
+  width: 24px;
 }
 
 .icon--phone {
@@ -13,5 +13,5 @@ width: 24px;
 }
 
 .icon--close {
-background-image: url(../../images/icons/icon-close.png);
+  background-image: url(../../images/icons/icon-close.png);
 }

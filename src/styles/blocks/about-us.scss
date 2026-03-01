@@ -1,5 +1,5 @@
 .about-us {
-  background-color: #FCFAEF;
+  background-color: #fcfaef;
 
   &__title {
     grid-column: 1 / -1;
@@ -16,7 +16,7 @@
   &__content {
     grid-column: 1 / -1;
 
-  @include on-tablet {
+    @include on-tablet {
       grid-column: 4 / 7;
     }
 
@@ -28,7 +28,7 @@
   &__text {
     padding-block: 48px;
 
-    @include on-tablet{
+    @include on-tablet {
       padding-block: 120px;
     }
 
@@ -43,21 +43,19 @@
     height: 200px;
 
     @include on-tablet {
-    height: 400px;
+      height: 400px;
     }
 
     @include on-desktop {
-    height: 460px;
+      height: 460px;
     }
   }
 
   &__description {
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
-  letter-spacing: 0.15px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.15px;
   }
 }
-
-
