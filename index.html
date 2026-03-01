@@ -205,6 +205,12 @@
                     Smart Home
                 </h3>
               </article>
+
+              <div class="categories__link-wrapper">
+                <a href="#" class="categories__link">
+                    View all
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -234,9 +240,70 @@
         </section>
 
 
-        <section class="contacts" id="contact-us">
+        <section class="contact-us" id="contact-us">
           <div class="container">
             <h2 class="section-title">Contact Us</h2>
+
+            <div class="contact-us__wrapper">
+              <form
+                action="/submit"
+                class="contact-us__form"
+                method="post"
+                >
+                <div class="contact-us__input-wrapper">
+                  <input
+                   type="text"
+                   class="contact-us__input"
+                   placeholder="Name"
+                   >
+                  <input
+                   type="email"
+                   class="contact-us__input"
+                   placeholder="Email"
+                   >
+                  <textarea
+                   class="contact-us__input contact-us__input--message"
+                   placeholder="Message"
+                   ></textarea>
+                </div>
+
+                <button class="contact-us__button">
+                  Send
+                </button>
+              </form>
+
+              <div class="contact-us__contacts">
+                <div class="contact-us__section">
+                  <p class="contact-us__description">
+                    Phone
+                  </p>
+
+                  <p class="contact-us__information">
+                    +1 234 5555-55-55
+                  </p>
+                </div>
+
+                <div class="contact-us__section">
+                  <p class="contact-us__description">
+                    Email
+                  </p>
+
+                  <p class="contact-us__information">
+                    hello@bang&olufsen.com
+                  </p>
+                </div>
+
+                <div class="contact-us__section">
+                  <p class="contact-us__description">
+                    Address
+                  </p>
+
+                  <p class="contact-us__information">
+                    400 first ave.<br>suite 700<br>Minneapolis, MN 55401
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>
