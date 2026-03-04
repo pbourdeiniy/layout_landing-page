@@ -4,6 +4,7 @@
   height: 100vh;
   background-color: #f9f9f9;
   font-weight: 700;
+  overflow: auto;
 
   &__top {
     margin-bottom: 32px;
@@ -11,6 +12,10 @@
     @include on-tablet {
       margin-bottom: 56px;
     }
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
   }
 
   &__nav {

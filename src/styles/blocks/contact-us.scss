@@ -1,5 +1,8 @@
 .contact-us {
+  position: relative;
   &__wrapper {
+    //  position: relative;
+
     @include on-desktop {
       @include page-grid;
     }
@@ -74,9 +77,7 @@
     line-height: 27px;
     letter-spacing: 0;
 
-    &:hover {
-      background-color: #1b2129;
-    }
+    @include hover(background-color, #1b2129);
   }
 
   &__contacts {
@@ -99,5 +100,20 @@
     font-size: 16px;
     line-height: 140%;
     letter-spacing: 0.15px;
+    text-decoration: none;
+
+    @include hover(color, #9393a3);
   }
+
+  // &__footer {
+  //   position: sticky;
+  //   bottom: 0;
+  //   z-index: -1;
+  // }
+
+  // &__content {
+  //     position: relative;
+  //     z-index: 1;
+  //     background: white;
+  // }
 }
