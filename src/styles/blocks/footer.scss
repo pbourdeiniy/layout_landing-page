@@ -5,16 +5,18 @@
 
   &__image {
     display: block;
-    width: 100%;
+    background-image: url(../../images/musical-equipment.png);
+    background-position: center;
+    background-size: cover;
     height: 200px;
-    object-fit: cover;
+
 
     @include on-tablet {
       height: 400px;
     }
 
     @include on-desktop {
-      height: 400px;
+      height: 480px;
     }
   }
 }

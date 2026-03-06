@@ -9,6 +9,16 @@
   }
   &__form {
     grid-column: span 6;
+    margin-bottom: 48px;
+
+    @include on-tablet {
+      margin-bottom: 80px;
+    }
+
+    @include on-desktop {
+      margin-bottom: 0;
+    }
+
   }
   &__input-wrapper {
     display: grid;
@@ -84,6 +94,7 @@
     display: grid;
     row-gap: 24px;
     grid-column: 8 / span 5;
+    align-content: start;
   }
 
   &__description {
@@ -92,6 +103,7 @@
     font-size: 14px;
     line-height: 140%;
     letter-spacing: 0.15px;
+    margin: 0 0 8px;
   }
 
   &__information {
@@ -104,6 +116,10 @@
 
     @include hover(color, #9393a3);
   }
+
+  // &__section {
+  //   align-self: start;
+  // }
 
   // &__footer {
   //   position: sticky;
