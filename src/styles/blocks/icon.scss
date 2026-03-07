@@ -4,7 +4,41 @@
   width: 24px;
   background-size: cover;
 
-  @include hover(transform, scale(1.4));
+  &__number {
+  display: block;
+  font-family: Inter, sans-serif;
+  color: #1B2129;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-align: right;
+  text-transform: uppercase;
+  text-decoration: none;
+  align-self: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform $effects-duration ease,
+        opacity $effects-duration;
+  }
+
+  &__phone-wrapper {
+    display: flex;
+    gap: 8px;
+
+    @include on-desktop {
+    &:has(.icon--phone:hover) {
+      .icon__number {
+        opacity: 1;
+        pointer-events: auto;
+      }
+    }
+    }
+  }
+
+
+
+  @include hover(transform, scale(1.2));
 
   @include on-tablet {
     height: 32px;
