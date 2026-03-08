@@ -87,6 +87,10 @@
     line-height: 27px;
     letter-spacing: 0;
 
+    &:hover {
+      cursor: pointer;
+    }
+
     @include hover(background-color, #1b2129);
   }
 
@@ -113,6 +117,10 @@
     line-height: 140%;
     letter-spacing: 0.15px;
     text-decoration: none;
+
+    &:hover {
+      cursor: pointer;
+    }
 
     @include hover(color, #9393a3);
   }

@@ -32,6 +32,7 @@
 
     &:hover {
       background-color: #1b2129;
+      cursor: pointer;
     }
 
     &:active {
@@ -58,6 +59,10 @@
     display: block;
     grid-column: span 1;
     height: 100%;
+
+    &:hover {
+      cursor: pointer;
+    }
 
     @include hover(transform, $scale);
 

@@ -17,6 +17,10 @@
     color: inherit;
     letter-spacing: 0;
 
+    &:hover {
+      cursor: pointer;
+    }
+
     &::after {
       content: '';
       display: block;

@@ -20,6 +20,10 @@
 
   &__logo-link {
     display: flex;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__logo {

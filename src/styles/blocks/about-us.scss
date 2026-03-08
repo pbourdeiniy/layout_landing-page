@@ -41,6 +41,9 @@
     background-position: center;
     background-size: cover;
     height: 200px;
+    &:hover {
+      cursor: pointer;
+    }
 
     @include on-tablet {
       height: 400px;

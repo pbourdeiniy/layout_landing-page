@@ -6,6 +6,10 @@
   &__link {
     display: block;
 
+    &:hover {
+      cursor: pointer;
+    }
+
     @include hover(transform, $scale);
   }
 }

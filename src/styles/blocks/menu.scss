@@ -29,6 +29,10 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 16px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__call-to-order {
@@ -42,5 +46,9 @@
     text-decoration: none;
     color: inherit;
     text-transform: uppercase;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
